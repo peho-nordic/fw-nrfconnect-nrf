@@ -140,6 +140,9 @@ static int z_to_nrf_optname(int z_in_level, int z_in_optname,
 		case TLS_SESSION_CACHE:
 			*nrf_out_optname = NRF_SO_SEC_SESSION_CACHE;
 			break;
+		case TLS_DTLS_TIMEOUT:
+			*nrf_out_optname = NRF_SO_SEC_DTLS_TIMEOUT;
+			break;
 		default:
 			retval = -1;
 			break;
